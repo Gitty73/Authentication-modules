@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Splitwise</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+<body style = "text-align: center; background-color: #E0FFFF; margin-top: 5%;">
+        
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+        <div class="alert alert-success" role="alert">
+            <%= success %>
+        </div>
+        <% } %>
+    </div>
+        <img style = "width: 200px; height: 200px;" src = "https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/press/logo-large-461e1ff6e1405c32ce4e1f1f422abec18eb8d2f70865f7d06a7b03b75de7f188.png" alt="logo image">
+        <br><br>
+        <h1>Welcome To Splitwise Home Page!</h1>
+        <a href="/login">Login</a><br>
+        <a href="/register">Sign up</a><br>
+        <a href="/useracc">My Account</a>
+</body>
+</html>

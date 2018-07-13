@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Splitwise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style = "text-align: center; background-color: #B0E0E6; margin-top: 10%;">
+
+<div class="container">
+        <% if(error && error.length > 0){ %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+        <div class="alert alert-success" role="alert">
+            <%= success %>
+        </div>
+        <% } %>
+    </div>
+
+<h1>Register here!</h1>
+<form action = "/register" method = "POST">
+    <input type = "text" name="username" placeholder = "username"><br>
+    <input type = "password" name="password" placeholder = "password"><br>
+    <input type = "submit">
+</form>
+<a href="/login">Login</a><br>
+<a href="/">Go Home</a>
+</body>
+</html>
